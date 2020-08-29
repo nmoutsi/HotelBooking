@@ -1,7 +1,0 @@
-This is the 1st text doc.
-
-Added a 2nd line.
-
-And a 3rd line.
-
-and a 4th line
