@@ -1,0 +1,143 @@
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #fff;
+}
+
+header {
+	display: flex;
+	height: 3em;
+	background-color: #e9e6e6;
+}
+
+.headerMain {
+	flex: 1;
+	text-align: center;
+}
+
+header h4 {
+	margin: 1em;
+}
+
+header ul {
+	flex: 1;
+	text-align: center;
+	padding: 0;
+	margin: 1em;
+}
+
+header ul li {
+	list-style: none;
+}
+
+header li > a {
+	outline: none;
+	text-decoration: none;
+	color: #f18621;
+	font-size: 1.1em;
+	text-align: center;
+	margin: 0;
+}
+
+main {
+	background-color: #263d67;
+}
+
+.hero {
+	display: flex;
+	margin: 0 auto;
+	width: 100vw;
+	height: 75vw;
+	background-image: url(../images/Burj-Al-Arab-Exterior.jpg);
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+.flex1 {
+	flex: 1.2;
+}
+
+.flex2 {
+	flex: 0.8;
+}
+
+form {
+	/* Center the form on the page */
+	margin: 55% auto;
+	padding: 1em;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+}
+
+.searchForm {
+	background-color: #fff;
+	width: 83%;
+	padding: 1rem 2rem;
+}
+
+.searchArea {
+	display: grid;
+	grid-template-areas:
+		"city roomType"
+		"dateIn dateOut"
+		"action action";
+	grid-row-gap: 1em;
+	grid-template-columns: 1fr 1fr;
+}
+
+.city {
+	grid-area: city;
+}
+
+.roomType {
+	grid-area: roomType;
+}
+
+.dateIn {
+	grid-area: dateIn;
+}
+
+.dateOut {
+	grid-area: dateOut;
+}
+
+.action {
+	grid-area: action;
+	padding-left: 40%;
+}
+
+select {
+	width: 100%;
+}
+
+#formCity,
+#roomType {
+	background-color: #ececec;
+}
+
+#formCity,
+#roomType,
+#dateIn,
+#dateOut {
+	color: #747474;
+}
+
+#submitButton {
+	background-color: #f18621;
+	color: #fff;
+	border: 0.3em solid #f18621;
+	border-radius: 3px;
+}
+
+footer {
+	width: 100%;
+	height: 1.3em;
+	background-color: #dddddd;
+	border-top: 4px solid #999696;
+	text-align: center;
+	padding-top: 1.3em;
+}
+
+footer > p {
+	margin: 0;
+}
