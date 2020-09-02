@@ -4,8 +4,9 @@ body {
 	background-color: #fff;
 }
 
-.mainContainer {
-	width: 75em;
+/* ------------- HEADER AREA ------------- */
+.header_mainContainer {
+	width: 60em;
 	margin: 0 auto;
 }
 
@@ -13,11 +14,13 @@ header {
 	display: flex;
 	height: 3em;
 	color: #747474;
+	border-bottom: 1px solid #cac9c9;
 }
 
-.headerMain {
+.headerLeft {
 	flex: 1;
-	text-align: center;
+	text-align: left;
+	margin-left: 10%;
 }
 
 header h4 {
@@ -37,6 +40,11 @@ header ul li {
 	margin-left: 1.5em;
 }
 
+header ul li:first-child {
+	padding-right: 1.6em;
+	border-right: 1px solid #cac9c9;
+}
+
 header li > a {
 	outline: none;
 	text-decoration: none;
@@ -45,6 +53,154 @@ header li > a {
 	margin: 0;
 }
 
+/* ------------- MAIN AREA ------------- */
+.main {
+	display: flex;
+}
+
+/* ------ Aside ------ */
+aside {
+	flex: 0.6;
+	margin: 0 2em 0 0;
+	border-right: 1px solid #cac9c9;
+	border-left: 1px solid #cac9c9;
+}
+
+aside > p {
+	color: #f55a13;
+	text-align: center;
+	margin: 1em;
+}
+
+.searchForm {
+	margin: 10% auto;
+	background-color: #fff;
+	padding: 0 1.5em;
+}
+
+.guests,
+.room,
+.city,
+.dateIn,
+.dateOut,
+.action {
+	margin: 1em 0;
+}
+#formGuests,
+#formCity,
+#roomType {
+	width: 100%;
+	padding: 0.9em 1em;
+	color: #747474;
+	background-color: #f3f3f3;
+	border: 1px solid #b4b4b4;
+	border-radius: 2px;
+}
+
+label {
+	display: block;
+	text-align: center;
+}
+
+#dateIn,
+#dateOut {
+	width: 83%;
+	padding: 0.8em 1em;
+	border: 1px solid #b4b4b4;
+	border-radius: 2px;
+}
+
+#submitButton {
+	background-color: #f55a13;
+	color: #fff;
+	border: 0.3em solid #f55a13;
+	border-radius: 3px;
+	width: 100%;
+}
+
+/* ------ Search Results ------ */
+.searchResultsContainer {
+	flex: 2;
+}
+
+.searchResultsContainer > p {
+	background-color: #f55a13;
+	color: #fff;
+	padding: 0.7em;
+	margin-bottom: 2em;
+}
+
+.roomContainer {
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	margin: 2em 0;
+}
+
+.roomImgCont {
+	grid-row: 1;
+	grid-column: 1/2;
+	border-right: 1.5px solid #f55a13;
+}
+
+.roomImg {
+	max-width: 90%;
+}
+
+.roomInfoCont {
+	grid-row: 1;
+	grid-column: 2/6;
+	margin-left: 1.2em;
+}
+
+.roomDescription {
+	padding: 1em 2em 0 0;
+}
+
+.button {
+	float: right;
+}
+
+button {
+	color: #fff;
+	background-color: #f55a13;
+	border: 1px solid #f55a13;
+	border-radius: 3px;
+	margin: 0.5em 0;
+	padding: 0.4em;
+}
+.pricePerNight {
+	grid-row: 2;
+	grid-column: 1/2;
+	color: #fff;
+	background-color: #747474;
+	text-align: center;
+	padding: 0.5em 0;
+	margin: 2em 1em;
+	font-size: 0.9em;
+}
+
+.numOfGuests {
+	grid-column: 2/4;
+	margin: 2em 0 2em 1em;
+	border-right: 1px solid #000;
+}
+
+.typeOfRoom {
+	grid-column: 4/6;
+	margin: 2em 0;
+}
+
+.numOfGuests,
+.typeOfRoom {
+	grid-row: 2;
+	color: #747474;
+	background-color: #dddddd;
+	padding: 0.5em 0;
+	text-align: center;
+	font-size: 0.9em;
+}
+
+/* ------------- FOOTER AREA ------------- */
 footer {
 	width: 100%;
 	height: 1.3em;
