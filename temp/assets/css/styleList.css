@@ -4,17 +4,22 @@ body {
 	background-color: #fff;
 }
 
-/* ------------- HEADER AREA ------------- */
 .header_mainContainer {
 	width: 60em;
 	margin: 0 auto;
 }
 
+/* ------------- HEADER AREA ------------- */
 header {
 	display: flex;
 	height: 3em;
 	color: #747474;
-	border-bottom: 1px solid #cac9c9;
+	box-shadow: 0px 4px 4px 1px rgba(0, 0, 0, 0.15);
+	position: fixed;
+	background-color: #fff;
+	width: 60em;
+	z-index: 99999;
+	margin: 0 auto;
 }
 
 .headerLeft {
@@ -61,12 +66,15 @@ header li > a {
 /* ------ Aside ------ */
 aside {
 	flex: 0.6;
-	margin: 0 2em 0 0;
-	border-right: 1px solid #cac9c9;
-	border-left: 1px solid #cac9c9;
+	margin: 4em 2em 0 0;
 }
 
-aside > p {
+.asideCont {
+	box-shadow: 0 2px 4px 4px rgba(0, 0, 0, 0.11);
+	border-radius: 5px;
+	padding: 1em 0;
+}
+.asideCont > p {
 	color: #f55a13;
 	text-align: center;
 	margin: 1em;
@@ -118,9 +126,18 @@ label {
 	width: 100%;
 }
 
+#submitButton:hover,
+#submitButton:active,
+#submitButton:focus {
+	background-color: #cc480a;
+	border: 0.3em solid #cc480a;
+	cursor: pointer;
+}
+
 /* ------ Search Results ------ */
 .searchResultsContainer {
 	flex: 2;
+	margin-top: 4em;
 }
 
 .searchResultsContainer > p {
@@ -134,6 +151,11 @@ label {
 	display: grid;
 	grid-template-columns: repeat(5, 1fr);
 	margin: 2em 0;
+	border-bottom: 1px dashed #e4e4e4;
+}
+
+.searchResultsContainer > div:last-child {
+	border-bottom: none;
 }
 
 .roomImgCont {
@@ -163,11 +185,20 @@ label {
 button {
 	color: #fff;
 	background-color: #f55a13;
-	border: 1px solid #f55a13;
+	border: 0.3em solid #f55a13;
 	border-radius: 3px;
 	margin: 0.5em 0;
 	padding: 0.4em;
 }
+
+button:hover,
+button:active,
+button:focus {
+	background-color: #cc480a;
+	border: 0.3em solid #cc480a;
+	cursor: pointer;
+}
+
 .pricePerNight {
 	grid-row: 2;
 	grid-column: 1/2;
@@ -207,7 +238,7 @@ footer {
 	background-color: #dddddd;
 	border-top: 4px solid #999696;
 	text-align: center;
-	padding-top: 1.3em;
+	padding: 1.3em 0 0.4em 0;
 	color: #747474;
 }
 
