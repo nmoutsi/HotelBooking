@@ -76,7 +76,34 @@ form {
 	padding: 1rem 2rem;
 }
 
+.searchArea {
+	display: grid;
+	grid-template-areas:
+		"city roomType"
+		"dateIn dateOut"
+		"action action";
+	grid-row-gap: 1em;
+	grid-template-columns: 1fr 1fr;
+}
+
+.city {
+	grid-area: city;
+}
+
+.roomType {
+	grid-area: roomType;
+}
+
+.dateIn {
+	grid-area: dateIn;
+}
+
+.dateOut {
+	grid-area: dateOut;
+}
+
 .action {
+	grid-area: action;
 	padding-left: 40%;
 }
 
