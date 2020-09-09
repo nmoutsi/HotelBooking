@@ -40,6 +40,12 @@ header li > a {
 	margin: 0;
 }
 
+header li > a:hover,
+header li > a:active,
+header li > a:focus {
+	color: #cc480a;
+}
+
 /* ------------- MAIN AREA ------------- */
 main {
 	background-color: #263d67;
@@ -114,6 +120,14 @@ select {
 	color: #fff;
 	border: 0.3em solid #f55a13;
 	border-radius: 3px;
+}
+
+#submitButton:hover,
+#submitButton:active,
+#submitButton:focus {
+	background-color: #cc480a;
+	border: 0.3em solid #cc480a;
+	cursor: pointer;
 }
 
 /* ------------- FOOTER AREA ------------- */
