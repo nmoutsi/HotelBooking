@@ -4,6 +4,11 @@ body {
 	background-color: #fff;
 }
 
+.header_mainContainer {
+	width: 60em;
+	margin: 0 auto;
+}
+
 /* ------------- HEADER AREA ------------- */
 header {
 	display: flex;
@@ -47,16 +52,12 @@ header li > a:focus {
 }
 
 /* ------------- MAIN AREA ------------- */
-main {
-	background-color: #263d67;
-}
 
 .hero {
-	width: 100vw;
-	height: 36vh;
 	background: url(../images/Burj-Al-Arab-Exterior.jpg) no-repeat center center;
-	background-size: 100%;
-	padding: 200px 0 200px 0;
+	background-size: contain;
+	padding: 15% 0 35% 0;
+	background-color: #364063;
 }
 
 .searchForm {
@@ -144,4 +145,40 @@ footer {
 
 footer > p {
 	margin: 0;
+}
+
+@media (max-width: 60em) {
+	.header_mainContainer {
+		max-width: 100%;
+		margin: 0 auto;
+	}
+	.hero {
+		background: url(../images/Burj-Al-Arab-Exterior.jpg) no-repeat center
+			center;
+		background-size: 100%;
+		padding: 15% 0 35% 0;
+	}
+}
+
+@media (max-width: 45em) {
+	.header_mainContainer {
+		max-width: 100%;
+		margin: 0 auto;
+	}
+	.hero {
+		background: url(../images/Burj-Al-Arab-Exterior.jpg) no-repeat center
+			center;
+		background-size: cover;
+		padding: 40% 0 60% 0;
+	}
+
+	.searchForm {
+		margin: 0 auto;
+		border: 1px solid #ccc;
+		border-radius: 5px;
+		background-color: #fff;
+		max-width: 17em;
+		width: 80%;
+		padding: 1rem 2rem;
+	}
 }
