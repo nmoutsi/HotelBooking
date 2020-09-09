@@ -14,7 +14,7 @@ header {
 	display: flex;
 	height: 3em;
 	color: #747474;
-	box-shadow: 0px 4px 4px 1px rgba(0, 0, 0, 0.15);
+	box-shadow: 0px 4px 4px -2px rgba(0, 0, 0, 0.15);
 	position: fixed;
 	top: 0;
 	background-color: #fff;
@@ -76,7 +76,7 @@ aside {
 }
 
 .asideCont {
-	box-shadow: 0 2px 4px 4px rgba(0, 0, 0, 0.11);
+	box-shadow: 4px 0px 10px 1px rgba(0, 0, 0, 0.1);
 	border-radius: 5px;
 	padding: 1em 0;
 	width: 95%;
@@ -261,4 +261,12 @@ footer {
 
 footer > p {
 	margin: 0;
+}
+
+/* ------------- MEDIA QUERIES ------------- */
+
+@media (max-width: 60em) {
+	body {
+		background-color: #ddd;
+	}
 }
