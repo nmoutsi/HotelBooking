@@ -24,27 +24,41 @@
 				<aside>
 					<div class="asideCont">
 						<p>FIND THE PERFECT HOTEL</p>
-						<form class="searchForm" method="GET" action="list.html">
+						<form class="searchForm" method="GET" action="./list.html">
 							<div class="guests">
-								<select id="guests">
+								<select id="guests" name="guests">
 									<option value="null" selected>Count of Guests</option>
 									<option value="1">1</option>
 									<option value="2">2</option>
 								</select>
 							</div>
 							<div class="room">
-								<select id="roomType">
+								<select id="roomType" name="roomType">
 									<option value="null" selected>Room Type</option>
 									<option value="Single room">Single Room</option>
 									<option value="Double room">Double Room</option>
 								</select>
 							</div>
 							<div class="city">
-								<select id="city">
+								<select id="city" name="city">
 									<option value="null" selected>City</option>
 									<option value="1">Athens</option>
 									<option value="2">Thessaloniki</option>
 								</select>
+							</div>
+							<div class="maxPrice">
+								<label for="maxPrice">Max Price</label>
+								<input
+									class="slider"
+									type="range"
+									id="maxPrice"
+									name="maxPrice"
+									min="0"
+									max="5000"
+									step="50"
+									value="100"
+								/>
+								<output class="priceOutput" for="maxPrice"></output>
 							</div>
 							<div class="dateIn">
 								<label for="dateIn">Check-in Date</label>
@@ -58,7 +72,7 @@
 								<input
 									name="submit"
 									id="submitButton"
-									type="button"
+									type="submit"
 									value="FIND HOTEL"
 								/>
 							</div>
