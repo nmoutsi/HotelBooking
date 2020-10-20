@@ -1,0 +1,181 @@
+/* ------------- GLOBAL ELEMENTS ------------- */
+
+@font-face {
+	font-family: "RobotoR";
+	font-weight: 400;
+	src: url(../fonts/Roboto-Regular.ttf);
+}
+
+@font-face {
+	font-family: "RobotoL";
+	font-weight: 300;
+	src: url(../fonts/Roboto-Light.ttf);
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #fff;
+	font-family: "RobotoL", sans-serif;
+	font-weight: 300;
+}
+
+.header_mainContainer {
+	width: 60em;
+	margin: 0 auto;
+}
+
+/* ------------- HEADER AREA ------------- */
+header {
+	display: flex;
+	height: 3em;
+	background-color: #fff;
+}
+
+.headerLeft {
+	flex: 1;
+	text-align: center;
+}
+
+header h4 {
+	margin: 1em;
+}
+
+header ul {
+	flex: 1;
+	padding: 0;
+	margin: 1em;
+	text-align: right;
+}
+
+header ul li {
+	list-style: none;
+	display: inline-block;
+	margin-left: 1.5em;
+}
+
+header li > a {
+	outline: none;
+	text-decoration: none;
+	color: #747474;
+	font-size: 1.1em;
+	margin: 0;
+}
+
+header li > a:hover,
+header li > a:active,
+header li > a:focus {
+	color: #cc480a;
+}
+
+/* ------------- MAIN AREA ------------- */
+
+/* ------ Search Form ------ */
+
+.searchForm {
+	margin: 10% auto;
+	background-color: #fff;
+	padding: 0 2rem;
+}
+
+#guests,
+#city,
+#roomType {
+	width: 100%;
+	padding: 0.9em 1em;
+	color: #747474;
+	background-color: #f3f3f3;
+	border: 1px solid #b4b4b4;
+	border-radius: 2px;
+}
+
+label {
+	display: block;
+	text-align: center;
+}
+
+#dateIn,
+#dateOut {
+	width: 83%;
+	padding: 0.8em 1em;
+	border: 1px solid #b4b4b4;
+	border-radius: 2px;
+	color: #747474;
+}
+
+#submitButton {
+	background-color: #f55a13;
+	color: #fff;
+	border: 0.3em solid #f55a13;
+	border-radius: 3px;
+}
+
+#submitButton:hover,
+#submitButton:active,
+#submitButton:focus {
+	background-color: #cc480a;
+	border: 0.3em solid #cc480a;
+	cursor: pointer;
+}
+
+
+/* ------------- FOOTER AREA ------------- */
+footer {
+	width: 100%;
+	height: 1.3em;
+	background-color: #dddddd;
+	border-top: 4px solid #999696;
+	text-align: center;
+	padding: 1em 0 0.3em 0;
+	color: #747474;
+	font-size: 0.7em;
+}
+
+footer > p {
+	margin: 0;
+}
+
+	padding: 1em 0 0.3em 0;
+	color: #747474;
+	font-size: 0.7em;
+}
+
+footer > p {
+	margin: 0;
+}
+
+/* ------------- MEDIA QUERIES ------------- */
+
+@media (max-width: 60em) {
+	.header_mainContainer {
+		max-width: 100%;
+		margin: 0 auto;
+	}
+	.hero {
+		background: url(../images/Burj-Al-Arab-Exterior.jpg) no-repeat center center;
+		background-size: 100%;
+		padding: 15% 0 35% 0;
+	}
+}
+
+@media (max-width: 45em) {
+	.header_mainContainer {
+		max-width: 100%;
+		margin: 0 auto;
+	}
+	.hero {
+		background: url(../images/Burj-Al-Arab-Exterior.jpg) no-repeat center center;
+		background-size: cover;
+		padding: 40% 0 60% 0;
+	}
+
+	.searchForm {
+		margin: 0 auto;
+		border: 1px solid #ccc;
+		border-radius: 5px;
+		background-color: #fff;
+		max-width: 17em;
+		width: 80%;
+		padding: 1rem 2rem;
+	}
+}

@@ -39,3 +39,12 @@ specs/
 .Trashes
 ehthumbs.db
 Thumbs.db
+
+# Specific project folders & files "
+##########################
+temp/assets/fonts
+
+temp/assets/css/style - Copy.css
+temp/assets/css/styleIndex - Copy.css
+temp/assets/css/styleList - Copy.css
+HotelBooking.code-workspace

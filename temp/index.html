@@ -8,7 +8,7 @@
 	<body>
 		<section class="header_mainContainer">
 			<header>
-				<div class="headerMain">
+				<div class="headerLeft">
 					<h4>Hotels</h4>
 				</div>
 				<ul>
@@ -18,10 +18,10 @@
 				</ul>
 			</header>
 			<main class="main hero">
-				<form class="searchForm" method="POST" action="list.html">
+				<form class="searchForm" method="GET" action="./list.html">
 					<div class="searchArea">
 						<div class="city">
-							<select id="formCity">
+							<select id="city">
 								<option value="null" selected>City</option>
 								<option value="male">Athens</option>
 								<option value="female">Thess</option>
@@ -40,17 +40,13 @@
 						</div>
 						<div class="dateOut">
 							<label for="dateOut">Check-out Date</label>
-							<input
-								type="date"
-								id="dateOut"
-								name="checkOutDate"
-							/>
+							<input type="date" id="dateOut" name="checkOutDate" />
 						</div>
 						<div class="action">
 							<input
 								name="submit"
 								id="submitButton"
-								type="button"
+								type="submit"
 								value="Search"
 							/>
 						</div>
@@ -61,15 +57,8 @@
 		<footer>
 			<p>&copy HoBook 2020</p>
 		</footer>
-		<link
-			href="assets/css/styleIndex.css"
-			rel="stylesheet"
-			type="text/css"
-		/>
-		<link
-			href="assets/css/fontawesome.css"
-			rel="stylesheet"
-			type="text/css"
-		/>
+		<link href="assets/css/style.css" rel="stylesheet" type="text/css" />
+		<link href="assets/css/styleIndex.css" rel="stylesheet" type="text/css" />
+		<link href="assets/css/fontawesome.css" rel="stylesheet" type="text/css" />
 	</body>
 </html>

@@ -1,55 +1,16 @@
-body {
-	margin: 0;
-	padding: 0;
-	background-color: #fff;
-}
-
-.header_mainContainer {
-	width: 60em;
-	margin: 0 auto;
-}
-
 /* ------------- HEADER AREA ------------- */
 header {
-	display: flex;
-	height: 2.8em;
 	background-color: #e9e6e6;
 }
 
-.headerMain {
-	flex: 1;
-	text-align: center;
-}
-
-header h4 {
-	margin: 1em;
-}
-
 header ul {
-	flex: 1;
 	text-align: center;
-	padding: 0;
-	margin: 1em;
-}
-
-header ul li {
-	list-style: none;
 }
 
 header li > a {
-	outline: none;
-	text-decoration: none;
 	color: #f55a13;
-	font-size: 1.1em;
-	text-align: center;
-	margin: 0;
 }
 
-header li > a:hover,
-header li > a:active,
-header li > a:focus {
-	color: #cc480a;
-}
 
 /* ------------- MAIN AREA ------------- */
 
@@ -60,13 +21,15 @@ header li > a:focus {
 	background-color: #364063;
 }
 
+/* ------ Search Form ------ */
+
 .searchForm {
 	margin: 0 auto;
+	padding: 1em 2rem;
 	border: 1px solid #ccc;
 	border-radius: 5px;
-	background-color: #fff;
-	width: 17em;
-	padding: 1rem 2rem;
+	width: 21em;
+
 }
 
 .searchArea {
@@ -97,55 +60,18 @@ header li > a:focus {
 
 .action {
 	grid-area: action;
-	padding-left: 40%;
+	text-align: center;
 }
 
-select {
-	width: 100%;
-}
-
-#formCity,
-#roomType {
-	background-color: #ececec;
-}
-
-#formCity,
-#roomType,
-#dateIn,
-#dateOut {
-	color: #747474;
+.city, .dateIn {
+	margin: 0 2px;
 }
 
 #submitButton {
-	background-color: #f55a13;
-	color: #fff;
-	border: 0.3em solid #f55a13;
-	border-radius: 3px;
+	padding: 0.7em;
 }
 
-#submitButton:hover,
-#submitButton:active,
-#submitButton:focus {
-	background-color: #cc480a;
-	border: 0.3em solid #cc480a;
-	cursor: pointer;
-}
-
-/* ------------- FOOTER AREA ------------- */
-footer {
-	width: 100%;
-	height: 1.3em;
-	background-color: #dddddd;
-	border-top: 4px solid #999696;
-	text-align: center;
-	padding: 1em 0 0.3em 0;
-	color: #747474;
-	font-size: 0.7em;
-}
-
-footer > p {
-	margin: 0;
-}
+/* ------------- MEDIA QUERIES ------------- */
 
 @media (max-width: 60em) {
 	.header_mainContainer {
@@ -153,8 +79,7 @@ footer > p {
 		margin: 0 auto;
 	}
 	.hero {
-		background: url(../images/Burj-Al-Arab-Exterior.jpg) no-repeat center
-			center;
+		background: url(../images/Burj-Al-Arab-Exterior.jpg) no-repeat center center;
 		background-size: 100%;
 		padding: 15% 0 35% 0;
 	}
@@ -166,8 +91,7 @@ footer > p {
 		margin: 0 auto;
 	}
 	.hero {
-		background: url(../images/Burj-Al-Arab-Exterior.jpg) no-repeat center
-			center;
+		background: url(../images/Burj-Al-Arab-Exterior.jpg) no-repeat center center;
 		background-size: cover;
 		padding: 40% 0 60% 0;
 	}
