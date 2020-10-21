@@ -21,8 +21,8 @@ body {
 }
 
 .header_mainContainer {
-	width: 60em;
-	margin: 0 auto;
+    max-width: 575px;
+    height: 95vh;
 }
 
 /* ------------- HEADER AREA ------------- */
@@ -189,6 +189,27 @@ footer > p {
 
 /* ------------- MEDIA QUERIES ------------- */
 
+@media only screen and (min-width: 576px) {
+	
+}
+
+@media only screen and (min-width: 768px) {
+	
+}
+
+@media only screen and (min-width: 992px) {
+	
+}
+
+@media only screen and (min-width: 1200px) {
+	.header_mainContainer {
+	width: 60em;
+	margin: 0 auto;
+	}
+
+}
+
+/* 
 @media (max-width: 60em) {
 	.header_mainContainer {
 		max-width: 100%;
@@ -221,4 +242,4 @@ footer > p {
 		width: 80%;
 		padding: 1rem 2rem;
 	}
-}
+} */

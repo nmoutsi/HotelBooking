@@ -11,14 +11,17 @@ header li > a {
 	color: #f55a13;
 }
 
-
 /* ------------- MAIN AREA ------------- */
 
 .hero {
-	background: url(../images/Burj-Al-Arab-Exterior.jpg) no-repeat center center;
-	background-size: contain;
-	padding: 15% 0 35% 0;
+	height: 90vh;
+	background-image: url(../images/Burj-Al-Arab-Exterior.jpg);
+	background-position: -320px;
+	background-size: cover;
+	background-repeat: no-repeat;
 	background-color: #364063;
+	height: 80vh;
+	padding-top: 10vh;
 }
 
 /* ------ Search Form ------ */
@@ -28,11 +31,10 @@ header li > a {
 	padding: 1em 2rem;
 	border: 1px solid #ccc;
 	border-radius: 5px;
-	width: 21em;
-
+	width: 10em;
 }
 
-.searchArea {
+/* .searchArea {
 	display: grid;
 	grid-template-areas:
 		"city roomType"
@@ -41,7 +43,7 @@ header li > a {
 	grid-row-gap: 1em;
 	grid-template-columns: 1fr 1fr;
 }
-
+ */
 .city {
 	grid-area: city;
 }
@@ -63,8 +65,12 @@ header li > a {
 	text-align: center;
 }
 
-.city, .dateIn {
-	margin: 0 2px;
+.room,
+.city,
+.dateIn,
+.dateOut,
+.action {
+	margin: 1em 0;
 }
 
 #submitButton {
@@ -73,6 +79,65 @@ header li > a {
 
 /* ------------- MEDIA QUERIES ------------- */
 
+@media only screen and (min-width: 576px) {
+}
+
+@media only screen and (min-width: 768px) {
+}
+
+@media only screen and (min-width: 992px) {
+}
+
+@media only screen and (min-width: 1200px) {
+	.hero {
+		background-image: url(../images/Burj-Al-Arab-Exterior1950.jpg);
+		background-size: cover;
+		padding: 15% 0 35% 0;
+	}
+
+	.searchForm {
+		margin: 0 auto;
+		width: 21em;
+	}
+
+	.searchArea {
+		display: grid;
+		grid-template-areas:
+			"city roomType"
+			"dateIn dateOut"
+			"action action";
+		grid-row-gap: 1em;
+		grid-template-columns: 1fr 1fr;
+	}
+
+	.city {
+		grid-area: city;
+	}
+
+	.roomType {
+		grid-area: roomType;
+	}
+
+	.dateIn {
+		grid-area: dateIn;
+	}
+
+	.dateOut {
+		grid-area: dateOut;
+	}
+
+	.action {
+		grid-area: action;
+		text-align: center;
+	}
+
+	.city,
+	.dateIn {
+		margin: 0 2px;
+	}
+}
+
+/* 
 @media (max-width: 60em) {
 	.header_mainContainer {
 		max-width: 100%;
@@ -105,4 +170,4 @@ header li > a {
 		width: 80%;
 		padding: 1rem 2rem;
 	}
-}
+} */
