@@ -1,3 +1,7 @@
+.header_mainContainer {
+	height: 95vh;
+}
+
 /* ------------- HEADER AREA ------------- */
 header {
 	background-color: #e9e6e6;

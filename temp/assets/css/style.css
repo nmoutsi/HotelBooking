@@ -22,7 +22,6 @@ body {
 
 .header_mainContainer {
     max-width: 575px;
-    height: 95vh;
 }
 
 /* ------------- HEADER AREA ------------- */
@@ -190,7 +189,10 @@ footer > p {
 /* ------------- MEDIA QUERIES ------------- */
 
 @media only screen and (min-width: 576px) {
-	
+	.header_mainContainer {
+	width: 60em;
+	margin: 0 auto;
+	}
 }
 
 @media only screen and (min-width: 768px) {
