@@ -20,8 +20,8 @@ body {
 	font-weight: 300;
 }
 
-.header_mainContainer {
-    max-width: 575px;
+.invisible {
+	display: none;
 }
 
 /* ------------- HEADER AREA ------------- */
@@ -42,9 +42,9 @@ header h4 {
 }
 
 header ul {
-	flex: 1;
+	flex: 2;
+	margin: 1rem 1rem 1rem 0;
 	padding: 0;
-	margin: 1em;
 	text-align: right;
 }
 
@@ -170,16 +170,7 @@ footer {
 	text-align: center;
 	padding: 1em 0 0.3em 0;
 	color: #747474;
-	font-size: 0.7em;
-}
-
-footer > p {
-	margin: 0;
-}
-
-	padding: 1em 0 0.3em 0;
-	color: #747474;
-	font-size: 0.7em;
+	font-size: 0.6rem;
 }
 
 footer > p {
@@ -187,28 +178,27 @@ footer > p {
 }
 
 /* ------------- MEDIA QUERIES ------------- */
+/* ------------- 0-768px Mobile Phones & Tablet (Portrait) ------------- */
+/* ------------- ALL THE ABOVE configuration ------------- */
 
-@media only screen and (min-width: 576px) {
+
+@media only screen and (min-width: 480px) {
 	.header_mainContainer {
-	width: 60em;
-	margin: 0 auto;
+		margin: 0 auto;
 	}
 }
 
-@media only screen and (min-width: 768px) {
-	
-}
-
-@media only screen and (min-width: 992px) {
-	
-}
-
-@media only screen and (min-width: 1200px) {
+/* ------------- 769-1024px Tablet (Landscape) & Laptops (MDi) ------------- */
+@media only screen and (min-width: 769px) {
 	.header_mainContainer {
-	width: 60em;
-	margin: 0 auto;
-	}
+		max-width: 100%;
+}
 
+/* ------------- 1025px- Laptops (HDi) & Desktops ------------- */
+@media only screen and (min-width: 1025px) {
+	.header_mainContainer {
+		max-width: 1900px;
+}
 }
 
 /* 

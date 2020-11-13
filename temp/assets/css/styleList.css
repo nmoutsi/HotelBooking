@@ -1,3 +1,8 @@
+/* ------------- MAIN CONTAINER ------------- */
+.header_mainContainer {
+	max-width: 650px;
+}
+
 /* ------------- HEADER AREA ------------- */
 header {
 	color: #747474;
@@ -7,11 +12,6 @@ header {
 	width: 96vw;
 	z-index: 99999;
 	margin: 0 0.5rem;
-}
-
-header ul {
-	flex: 2;
-	margin: 1rem 1rem 1rem 0;
 }
 
 header ul li:first-child {
@@ -163,17 +163,32 @@ button:focus {
 }
 
 /* ------------- MEDIA QUERIES ------------- */
+/* ------------- 0-768px Mobile Phones & Tablet (Portrait) ------------- */
+/* ------------- ALL THE ABOVE configuration ------------- */
 
-@media only screen and (min-width: 576px) {
+/* ------------- 769-1024px Tablet (Landscape) & Laptops (MDi) ------------- */
+@media only screen and (min-width: 769px) {
+	header {
+		max-width: 768px;
+	}
+
+	/* ------ Aside ------ */
+	aside {
+		margin: 4em 2em 0 0;
+		position: fixed;
+		z-index: 99999;
+	}
+
+	/* ------ Search Results ------ */
+	.searchResultsContainer {
+		margin-top: 4em;
+		width: 65%;
+		float: right;
+	}
 }
 
-@media only screen and (min-width: 768px) {
-}
-
-@media only screen and (min-width: 992px) {
-}
-
-@media only screen and (min-width: 1200px) {
+/* ------------- 1025px- Laptops (HDi) & Desktops ------------- */
+@media only screen and (min-width: 1025px) {
 	header {
 		width: 60rem;
 	}
