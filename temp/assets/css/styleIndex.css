@@ -6,7 +6,6 @@
 
 /* ------------- HEADER AREA ------------- */
 header {
-	background-colors: #e9e6e6;
 	height: 7%;
 	box-sizing: border-box;
 	/* font-size: 0.8rem; */
@@ -14,7 +13,6 @@ header {
 
 .headerLeft,
 .headerRight {
-	margins: 3.6%;
 	line-height: 4;
 	background-color: #e9e6e6;
 }
@@ -200,10 +198,6 @@ footer {
 }
 /* ------------- 769-1024px Tablet (Landscape) & Laptops (MDi) ------------- */
 @media only screen and (min-width: 769px) {
-	.headerLeft,
-	.headerRight {
-		margins: 2%;
-	}
 	header {
 		height: 7%;
 	}

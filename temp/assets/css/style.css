@@ -89,12 +89,12 @@ header li > a:focus {
 	border-radius: 2px;
 }
 
-.MaxPrice{
+.MaxPrice {
 	width: 100%;
 }
 
-.slider{
-	-webkit-appearance: none;  /* Override default CSS styles */
+.slider {
+	-webkit-appearance: none; /* Override default CSS styles */
 	appearance: none;
 	width: 100%; /* Full-width */
 	height: 8px; /* Specified height */
@@ -102,31 +102,31 @@ header li > a:focus {
 	background: #d3d3d3; /* Grey background */
 	outline: none; /* Remove outline */
 	opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
-	-webkit-transition: .2s; /* 0.2 seconds transition on hover */
-	transition: opacity .2s;
+	-webkit-transition: 0.2s; /* 0.2 seconds transition on hover */
+	transition: opacity 0.2s;
 }
 
 /* Mouse-over effects */
 .slider:hover {
-  opacity: 1; /* Fully shown on mouse-over */
+	opacity: 1; /* Fully shown on mouse-over */
 }
 
 /* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
 .slider::-webkit-slider-thumb {
-  -webkit-appearance: none; /* Override default look */
-  appearance: none;
-  width: 15px; /* Set a specific slider handle width */
-  height: 15px; /* Slider handle height */
-  border-radius: 50%;
-  background: #f55a13; /* Green background */
-  cursor: pointer; /* Cursor on hover */
+	-webkit-appearance: none; /* Override default look */
+	appearance: none;
+	width: 15px; /* Set a specific slider handle width */
+	height: 15px; /* Slider handle height */
+	border-radius: 50%;
+	background: #f55a13; /* Green background */
+	cursor: pointer; /* Cursor on hover */
 }
 
 .slider::-moz-range-thumb {
-  width: 15px; /* Set a specific slider handle width */
-  height: 15px; /* Slider handle height */
-  background: #f55a13; /* Green background */
-  cursor: pointer; /* Cursor on hover */
+	width: 15px; /* Set a specific slider handle width */
+	height: 15px; /* Slider handle height */
+	background: #f55a13; /* Green background */
+	cursor: pointer; /* Cursor on hover */
 }
 
 label {
@@ -160,7 +160,6 @@ label {
 	cursor: pointer;
 }
 
-
 /* ------------- FOOTER AREA ------------- */
 footer {
 	width: 100%;
@@ -181,7 +180,6 @@ footer > p {
 /* ------------- 0-768px Mobile Phones & Tablet (Portrait) ------------- */
 /* ------------- ALL THE ABOVE configuration ------------- */
 
-
 @media only screen and (min-width: 480px) {
 	.header_mainContainer {
 		margin: 0 auto;
@@ -192,13 +190,13 @@ footer > p {
 @media only screen and (min-width: 769px) {
 	.header_mainContainer {
 		max-width: 100%;
+	}
 }
-
 /* ------------- 1025px- Laptops (HDi) & Desktops ------------- */
 @media only screen and (min-width: 1025px) {
 	.header_mainContainer {
 		max-width: 1900px;
-}
+	}
 }
 
 /* 
