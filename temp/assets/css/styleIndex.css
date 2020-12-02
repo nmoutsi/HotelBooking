@@ -130,7 +130,7 @@ footer {
 /* ------------- 0-480px Mobile Phones & Tablet (Portrait) ------------- */
 /* ------------- ALL THE ABOVE configuration ------------- */
 
-/* ------------- 480-768px Mobile Phones & Tablet (Portrait) ------------- */
+/* ------------- 480-768px Tablet (Portrait) ------------- */
 @media only screen and (min-width: 480px) {
 	/* ------ Header ------ */
 
@@ -228,7 +228,7 @@ footer {
 	.dateIn,
 	.dateOut,
 	.action {
-		margin: 0.8em 0;
+		margin: 0.8rem 0.07rem;
 	}
 
 	.city {
