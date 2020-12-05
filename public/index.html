@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>HoBook-Main Search</title>
+	</head>
+	<body>
+		<section class="header_mainContainer">
+			<header>
+				<div class="headerLeft">
+					<h4>Hotels</h4>
+				</div>
+				<div class="headerRight">
+					<p class="invisible">Hidden text</p>
+					<a href="#"><i class="fas fa-home"></i> Home</a>
+				</div>
+			</header>
+			<main class="main hero">
+				<!-- <<img src="assets/images/Burj-Al-Arab-Exterior.jpg"> -->
+				<form class="searchForm" method="GET" action="./list.html">
+					<div class="searchArea">
+						<div class="city">
+							<select id="city" name="city">
+								<option value="null" selected>City</option>
+								<option value="Athens">Athens</option>
+								<option value="Thessaloniki">Thessaloniki</option>
+							</select>
+						</div>
+						<div class="room">
+							<select id="roomType" name="roomType">
+								<option value="null" selected>Room Type</option>
+								<option value="room1">Single Bedroom</option>
+								<option value="room2">Double Bedroom</option>
+							</select>
+						</div>
+						<div class="dateIn">
+							<label for="dateIn">Check-in Date</label>
+							<input type="date" id="dateIn" name="checkInDate"  placeholder="checkInDate"/>
+						</div>
+						<div class="dateOut">
+							<label for="dateOut">Check-out Date</label>
+							<input type="date" id="dateOut" name="checkOutDate" />
+						</div>
+						<div class="action">
+							<input
+								name="submit"
+								id="submitButton"
+								type="submit"
+								value="Search"
+							/>
+						</div>
+					</div>
+				</form>
+			</main>
+			<footer>
+				<p>&copy HoBook 2020</p>
+			</footer>
+		</section>
+		
+		<link href="assets/css/style.css" rel="stylesheet" type="text/css" />
+		<link href="assets/css/styleIndex.css" rel="stylesheet" type="text/css" />
+		<link href="assets/css/fontawesome.css" rel="stylesheet" type="text/css" />
+	</body>
+</html>

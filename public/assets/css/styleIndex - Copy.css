@@ -1,0 +1,131 @@
+/* ------------- HEADER AREA ------------- */
+header {
+	background-color: #e9e6e6;
+}
+
+header ul {
+	text-align: center;
+}
+
+header li > a {
+	color: #f55a13;
+}
+
+
+/* ------------- MAIN AREA ------------- */
+
+.hero {
+	background: url(../images/Burj-Al-Arab-Exterior.jpg) no-repeat center center;
+	background-size: contain;
+	padding: 15% 0 35% 0;
+	background-color: #364063;
+}
+
+/* ------ Search Form ------ */
+
+.searchForm {
+	margin: 0 auto;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	width: 17em;
+	padding: 1rem 2rem;
+}
+
+.searchArea {
+	display: grid;
+	grid-template-areas:
+		"city roomType"
+		"dateIn dateOut"
+		"action action";
+	grid-row-gap: 1em;
+	grid-template-columns: 1fr 1fr;
+}
+
+.city {
+	grid-area: city;
+}
+
+.roomType {
+	grid-area: roomType;
+}
+
+.dateIn {
+	grid-area: dateIn;
+}
+
+.dateOut {
+	grid-area: dateOut;
+}
+
+.action {
+	grid-area: action;
+	padding-left: 40%;
+}
+
+select {
+	width: 100%;
+}
+
+#formCity,
+#roomType {
+	background-color: #ececec;
+}
+
+#formCity,
+#roomType,
+#dateIn,
+#dateOut {
+	color: #747474;
+}
+
+#submitButton {
+	background-color: #f55a13;
+	color: #fff;
+	border: 0.3em solid #f55a13;
+	border-radius: 3px;
+}
+
+#submitButton:hover,
+#submitButton:active,
+#submitButton:focus {
+	background-color: #cc480a;
+	border: 0.3em solid #cc480a;
+	cursor: pointer;
+}
+
+
+/* ------------- MEDIA QUERIES ------------- */
+
+@media (max-width: 60em) {
+	.header_mainContainer {
+		max-width: 100%;
+		margin: 0 auto;
+	}
+	.hero {
+		background: url(../images/Burj-Al-Arab-Exterior.jpg) no-repeat center center;
+		background-size: 100%;
+		padding: 15% 0 35% 0;
+	}
+}
+
+@media (max-width: 45em) {
+	.header_mainContainer {
+		max-width: 100%;
+		margin: 0 auto;
+	}
+	.hero {
+		background: url(../images/Burj-Al-Arab-Exterior.jpg) no-repeat center center;
+		background-size: cover;
+		padding: 40% 0 60% 0;
+	}
+
+	.searchForm {
+		margin: 0 auto;
+		border: 1px solid #ccc;
+		border-radius: 5px;
+		background-color: #fff;
+		max-width: 17em;
+		width: 80%;
+		padding: 1rem 2rem;
+	}
+}

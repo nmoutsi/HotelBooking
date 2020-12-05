@@ -1,0 +1,254 @@
+/* ------------- HEADER AREA ------------- */
+header {
+	color: #747474;
+	box-shadow: 0px 4px 4px -2px rgba(0, 0, 0, 0.15);
+	position: fixed;
+	top: 0;
+	width: 60em;
+	z-index: 99999;
+	margin: 0 auto;
+}
+
+.headerLeft {
+	margin-right: 50%;
+}
+
+header ul li:first-child {
+	padding-right: 1.6em;
+	border-right: 1px solid #cac9c9;
+}
+
+/* ------------- MAIN AREA ------------- */
+
+/* ------ Aside ------ */
+aside {
+	margin: 4em 2em 0 0;
+	position: fixed;
+	background-color: #fff;
+	z-index: 99999;
+}
+
+.asideCont {
+	box-shadow: 4px 0px 10px 1px rgba(0, 0, 0, 0.1);
+	border-radius: 5px;
+	padding: 1em 0;
+	width: 95%;
+}
+.asideCont > p {
+	color: #f55a13;
+	text-align: center;
+	margin: 1em;
+}
+
+/* ------ Search Form ------ */
+
+.guests,
+.room,
+.city,
+.dateIn,
+.dateOut,
+.action {
+	margin: 1em 0;
+}
+#formGuests,
+#formCity,
+#roomType {
+	width: 100%;
+	padding: 0.9em 1em;
+	color: #747474;
+	background-color: #f3f3f3;
+	border: 1px solid #b4b4b4;
+	border-radius: 2px;
+}
+
+label {
+	display: block;
+	text-align: center;
+}
+
+#dateIn,
+#dateOut {
+	width: 83%;
+	padding: 0.8em 1em;
+	border: 1px solid #b4b4b4;
+	border-radius: 2px;
+}
+
+#submitButton {
+	background-color: #f55a13;
+	color: #fff;
+	border: 0.3em solid #f55a13;
+	border-radius: 3px;
+	width: 100%;
+}
+
+#submitButton:hover,
+#submitButton:active,
+#submitButton:focus {
+	background-color: #cc480a;
+	border: 0.3em solid #cc480a;
+	cursor: pointer;
+}
+
+/* ------ Search Results ------ */
+.searchResultsContainer {
+	margin-top: 4em;
+	width: 70%;
+	float: right;
+}
+
+.searchResultsContainer > p {
+	background-color: #f55a13;
+	color: #fff;
+	padding: 0.7em;
+	margin-bottom: 2em;
+}
+
+.roomContainer {
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	margin: 2em 0;
+	border-bottom: 1px dashed #cfcfcf;
+}
+
+.searchResultsContainer > div:last-child {
+	border-bottom: none;
+}
+
+.roomImgCont {
+	grid-row: 1;
+	grid-column: 1/2;
+	border-right: 1.5px solid #f55a13;
+}
+
+.roomImg {
+	max-width: 90%;
+}
+
+.roomInfoCont {
+	grid-row: 1;
+	grid-column: 2/6;
+	margin-left: 1.2em;
+}
+
+.roomDescription {
+	padding: 1em 2em 0 0;
+}
+
+.button {
+	float: right;
+}
+
+button {
+	color: #fff;
+	background-color: #f55a13;
+	border: 0.3em solid #f55a13;
+	border-radius: 3px;
+	margin: 0.5em 0;
+	padding: 0.4em;
+}
+
+button:hover,
+button:active,
+button:focus {
+	background-color: #cc480a;
+	border: 0.3em solid #cc480a;
+	cursor: pointer;
+}
+
+.pricePerNight {
+	grid-row: 2;
+	grid-column: 1/2;
+	color: #fff;
+	background-color: #747474;
+	text-align: center;
+	padding: 0.5em 0;
+	margin: 2em 1em;
+	font-size: 0.9em;
+}
+
+.numOfGuestsCont {
+	grid-row: 2;
+	grid-column: 2/4;
+	margin: 2em 0 2em 1em;
+	background-color: #dddddd;
+	padding: 0.5em 0;
+	font-size: 0.9em;
+}
+
+.typeOfRoom {
+	grid-column: 4/6;
+	margin: 2em 0;
+	grid-row: 2;
+	color: #747474;
+	background-color: #dddddd;
+	padding: 0.5em 0;
+	text-align: center;
+	font-size: 0.9em;
+}
+
+.numOfGuests {
+	color: #747474;
+	text-align: center;
+	font-size: 0.9rem;
+	border-right: 1px solid #000;
+}
+
+.clearFloat {
+	clear: both;
+}
+
+/* ------------- MEDIA QUERIES ------------- */
+
+@media (max-width: 60em) {
+	.header_mainContainer {
+		width: 50em;
+	}
+
+	header {
+		width: 50em;
+	}
+
+	.searchResultsContainer {
+		margin: 0 auto;
+		margin-top: 4em;
+		width: 60%;
+	}
+}
+
+@media (max-width: 50em) {
+	.header_mainContainer {
+		max-width: 100%;
+		margin: 0 auto;
+	}
+
+	header {
+		height: 3em;
+		max-width: 98%;
+		margin: 0 auto;
+		font-size: 0.8em;
+	}
+
+	.headerLeft {
+		flex: 0.7;
+		margin-left: 3%;
+	}
+
+	header ul {
+		flex: 1.2;
+	}
+
+	aside {
+		max-width: 20em;
+		margin: 0 auto;
+		margin-top: 4em;
+		background-color: #fff;
+		position: static;
+	}
+
+	.searchResultsContainer {
+		margin: 1em auto;
+		max-width: 95%;
+		float: none;
+	}
+}

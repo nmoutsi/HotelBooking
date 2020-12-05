@@ -1,0 +1,235 @@
+/* ------------- GLOBAL ELEMENTS ------------- */
+
+@font-face {
+	font-family: "RobotoR";
+	font-weight: 400;
+	src: url(../fonts/Roboto-Regular.ttf);
+}
+
+@font-face {
+	font-family: "RobotoL";
+	font-weight: 300;
+	src: url(../fonts/Roboto-Light.ttf);
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #fff;
+	font-family: "RobotoL", sans-serif;
+	font-weight: 300;
+}
+
+.invisible {
+	display: none;
+}
+
+/* ------------- HEADER AREA ------------- */
+header {
+	display: flex;
+	height: 3rem;
+	background-color: #fff;
+}
+
+.headerLeft {
+	flex: 1;
+	text-align: center;
+}
+
+header h4 {
+	margin: 1rem;
+	font-size: 0.9rem;
+}
+
+header ul {
+	flex: 2;
+	margin: 1rem 2rem 1rem 0;
+	padding: 0;
+	text-align: right;
+}
+
+header ul li {
+	list-style: none;
+	display: inline-block;
+	margin-left: 1.5rem;
+}
+
+header li > a {
+	outline: none;
+	text-decoration: none;
+	color: #747474;
+	font-size: 0.9rem;
+	margin: 0;
+}
+
+header li > a:hover,
+header li > a:active,
+header li > a:focus {
+	color: #cc480a;
+}
+
+/* ------------- MAIN AREA ------------- */
+
+/* ------ Search Form ------ */
+
+.searchForm {
+	margin: 10% auto;
+	background-color: #fff;
+	padding: 0 2rem;
+}
+
+#guests,
+#city,
+#roomType {
+	width: 100%;
+	padding: 0.9rem 1rem;
+	color: #747474;
+	background-color: #f3f3f3;
+	border: 1px solid #ddd;
+	border-radius: 2px;
+}
+
+.MaxPrice {
+	width: 100%;
+}
+
+.slider {
+	-webkit-appearance: none; /* Override default CSS styles */
+	appearance: none;
+	width: 100%; /* Full-width */
+	height: 8px; /* Specified height */
+	border-radius: 5px;
+	background: #d3d3d3; /* Grey background */
+	outline: none; /* Remove outline */
+	opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+	-webkit-transition: 0.2s; /* 0.2 seconds transition on hover */
+	transition: opacity 0.2s;
+}
+
+/* Mouse-over effects */
+.slider:hover {
+	opacity: 1; /* Fully shown on mouse-over */
+}
+
+/* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+.slider::-webkit-slider-thumb {
+	-webkit-appearance: none; /* Override default look */
+	appearance: none;
+	width: 15px; /* Set a specific slider handle width */
+	height: 15px; /* Slider handle height */
+	border-radius: 50%;
+	background: #f55a13; /* Green background */
+	cursor: pointer; /* Cursor on hover */
+}
+
+.slider::-moz-range-thumb {
+	width: 15px; /* Set a specific slider handle width */
+	height: 15px; /* Slider handle height */
+	background: #f55a13; /* Green background */
+	cursor: pointer; /* Cursor on hover */
+}
+
+label {
+	display: block;
+	text-align: center;
+	font-size: 0.9rem;
+}
+
+#dateIn,
+#dateOut {
+	box-sizing: border-box;
+	width: 100%;
+	padding: 0.6rem 7vw 0.6rem 9vw;
+	border: 1px solid #ddd;
+	border-radius: 2px;
+	color: #747474;
+}
+
+#submitButton {
+	background-color: #f55a13;
+	color: #fff;
+	border: 0.3rem solid #f55a13;
+	border-radius: 3px;
+}
+
+#submitButton:hover,
+#submitButton:active,
+#submitButton:focus {
+	background-color: #cc480a;
+	border: 0.3rem solid #cc480a;
+	cursor: pointer;
+}
+
+/* ------------- FOOTER AREA ------------- */
+footer {
+	width: 100%;
+	height: 1.3rem;
+	background-color: #dddddd;
+	border-top: 4px solid #999696;
+	text-align: center;
+	padding: 1rem 0 0.3rem 0;
+	color: #747474;
+	font-size: 0.6rem;
+}
+
+footer > p {
+	margin: 0;
+}
+
+/* ------------- MEDIA QUERIES ------------- */
+/* ------------- 0-768px Mobile Phones & Tablet (Portrait) ------------- */
+/* ------------- ALL THE ABOVE configuration ------------- */
+
+@media only screen and (min-width: 480px) {
+	.header_mainContainer {
+		margin: 0 auto;
+	}
+}
+
+/* ------------- 769-1024px Tablet (Landscape) & Laptops (MDi) ------------- */
+@media only screen and (min-width: 769px) {
+	.header_mainContainer {
+		max-width: 100%;
+	}
+}
+/* ------------- 1025px- Laptops (HDi) & Desktops ------------- */
+@media only screen and (min-width: 1025px) {
+	.header_mainContainer {
+		max-width: 1200px;
+	}
+}
+
+/* 
+@media (max-width: 60em) {
+	.header_mainContainer {
+		max-width: 100%;
+		margin: 0 auto;
+	}
+	.hero {
+		background: url(../images/Burj-Al-Arab-Exterior.jpg) no-repeat center center;
+		background-size: 100%;
+		padding: 15% 0 35% 0;
+	}
+}
+
+@media (max-width: 45em) {
+	.header_mainContainer {
+		max-width: 100%;
+		margin: 0 auto;
+	}
+	.hero {
+		background: url(../images/Burj-Al-Arab-Exterior.jpg) no-repeat center center;
+		background-size: cover;
+		padding: 40% 0 60% 0;
+	}
+
+	.searchForm {
+		margin: 0 auto;
+		border: 1px solid #ccc;
+		border-radius: 5px;
+		background-color: #fff;
+		max-width: 17em;
+		width: 80%;
+		padding: 1rem 2rem;
+	}
+} */
